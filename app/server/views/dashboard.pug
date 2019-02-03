@@ -2,54 +2,150 @@
 extends layout
 
 block content
-  .main
-    ul
-      li
-        a(href='#') Home
-      li
-        a(href='#') Shop
-      li
-        a(href='#') Accessories
-      li
-        h1 Ecommerce
-      li
-        a(href='#') Collections
-      li
-        a(href='#') Brands
-      li
-        a(href='#') Contact
-  .cd-slider
-    ul
-      lia
-        .image(style='background-image:url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
-        .content
-          h2 Jackets Collection 2017
-          a(href='#') View Gallery
-      li
-        .image(style='background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
-        .content
-          h2 Accessories
-          a(href='#') View Gallery
-      li
-        .image(style='background-image:url(https://images.unsplash.com/photo-1416838375725-e834a83f62b7?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
-        .content
-          h2 Winter Shoes
-          a(href='#') View Gallery
-      li
-        .image(style='background-image:url(https://images.unsplash.com/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
-        .content
-          h2 Winter Collection 2017
-          a(href='#') View Gallery
-      li
-        .image(style='background-image:url(https://images.unsplash.com/photo-1453974336165-b5c58464f1ed?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
-        .content
-          h2 Summer Collection
-          a(href='#') View Gallery
-  .text
-    p
-      | SITE IS UNDER CONTRUCTION - ENGINEER NAVRON
+   main.container-page
+      nav.main-menu
+        p MKVV ALUMNI 
+        br
+        ul.menu-list
+          li.menu-item
+            i.icon.fa.fa-newspaper-o
+            span.title-menu News
+            ul.child-body
+              .news
+                li.post-news
+                  img(alt='', src='https://goo.gl/wMqxsg')
+                  i.fa.fa-ellipsis-v
+                  span.date 15/08/17
+                  h3.title-post 2009 Passed outs Meet
+                li.post-news
+                  img(alt='', src='https://goo.gl/74GmN7')
+                  i.fa.fa-ellipsis-v
+                  span.date 15/08/17
+                  h3.title-post 2010 Passed outs Meet
+                li.post-news
+                  img(alt='', src='https://goo.gl/9uBtr1')
+                  i.fa.fa-ellipsis-v
+                  span.date 15/08/17
+                  h3.title-post 2011 Passed outs Meet
+                a(href='#') More
+          li.menu-item
+            i.icon.fa.fa-film
+            span.title-menu Upcoming Events
+          li.menu-item
+            i.icon.fa.fa-television
+            span.title-menu Video
+          li.menu-item
+            i.icon.fa.fa-calendar-o
+            span.title-menu Events
+          li.menu-item
+            i.icon.fa.fa-list-ul
+            span.title-menu Watchlist
+      section.body-page
+        // / # Wrapper login
+        .wrapper-login
+          .login-with-social.col-2
+            h3.title-box Sign in with
+            ul.list-social-logins
+              li.wrap-login-btn.facebook
+                i.fa.fa-facebook
+                span login with facebook
+              li.wrap-login-btn.twitter
+                i.fa.fa-twitter
+                span login with twitter
+              li.wrap-login-btn.google
+                i.fa.fa-google
+                span login with google
+          .login-form.col-2
+            form(action='')
+              h3.title-box Fazer Login
+              .wrap-input
+                label(for='login') Login
+                input.ipt-style(placeholder='user@domain.com', type='text')
+              .wrap-input
+                label(for='password') Password
+                input.ipt-style(placeholder='user pass', type='password')
+              .wrap-input
+                button Login
+          .wrap-benefits
+            h3.title-box Benefits of your free IMDb account
+            ul.list-benefits
+              li.benefit
+                i.fa.fa-cogs
+                strong Personalized Recommendations
+                span Discover shows you'll love.
+              li.benefit
+                i.fa.fa-star
+                strong Your Watchlist
+                span Track everything you want to watch and receive e-mail when.
+              li.benefit
+                i.fa.fa-bar-chart
+                strong Your Ratings
+                span Rate and remember everything you've seen.
+              li.benefit
+                i.fa.fa-life-saver
+                strong Contribute to IMDb
+                span Add data that will be seen by millions of people and get cool badges.
+        // / # cover
+        .cover-page
+        // / # Links top
+        .wrap-links-top
+          span.link-menu
+            i.icon.fa.fa-user
+            a#btn-login.link.muted(href='#') Login
+          span.link-menu
+            i.icon.fa.fa-search
+            a#btn-search.link.muted(href='#') Search
+        // / #Header page
+        header.header-page
+          span.cat-tv Tv Series
+          h1.main-title Better Call Saul
+          ul.wrap-infos
+            li.info-item.rate 8,7
+            li.info-item AMC
+            li.info-item Crime, drama
+            li.info-item Tv Series (2015 -)
+          span.btn-more
+            | See more
+            i.icon.fa.fa-angle-down
+        // / #body page
+        section.body-page
+          // / #aside-left
+          .aside-left
+            img.thumb-serie(alt='thumb better call saul', src='https://goo.gl/fVq4Zi')
+            p.excerpt
+              | The trials and tribulations of criminal lawyer, Jimmy McGill, in the time leading up to establishing his strip-mall law office in Albuquerque, New Mexico.
+            .wrap-tags
+              span.btn-tag Crime
+              span.btn-tag Drama
+          // / #aside-right
+          .aside-right
+            // / #proggress
+            .rating-progress
+              span.rate-text 8.7
+            // / #menu-rating-site
+            ul.menu-rating-site
+              li.rate-site
+                span.rate 8.7/10 - imdb
+                progress(max='100', value='87') 8.7
+              li.rate-site
+                span.rate 9.7/10 - Rotten Tomatoes
+                progress(max='100', value='97') 8.7
+              li.rate-site
+                span.rate 9.0/10 - tv.com
+                progress(max='100', value='90') 8.7
+      // / menu footer
+      nav.menu-footer
+        li.menu-item sinopse
+        li.menu-item full cast
+        li.menu-item awards
+        li.menu-item related
+
 
 
 block scripts
   script(src='/js/views/dashboard.js')
-  link(rel='stylesheet', href='/css/dashboard.css')   
+  link(rel='stylesheet', href='/css/dashboard.css')
+  link(rel='stylesheet', href='/css/style.sass')
+  link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Maven+Pro|Ubuntu")
+  link(rel='stylesheet', href="https://use.fontawesome.com/2192a1d789.css")
+  link(rel='stylesheet', href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
