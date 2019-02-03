@@ -1,0 +1,55 @@
+
+extends layout
+
+block content
+  .main
+    ul
+      li
+        a(href='#') Home
+      li
+        a(href='#') Shop
+      li
+        a(href='#') Accessories
+      li
+        h1 Ecommerce
+      li
+        a(href='#') Collections
+      li
+        a(href='#') Brands
+      li
+        a(href='#') Contact
+  .cd-slider
+    ul
+      lia
+        .image(style='background-image:url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
+        .content
+          h2 Jackets Collection 2017
+          a(href='#') View Gallery
+      li
+        .image(style='background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
+        .content
+          h2 Accessories
+          a(href='#') View Gallery
+      li
+        .image(style='background-image:url(https://images.unsplash.com/photo-1416838375725-e834a83f62b7?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
+        .content
+          h2 Winter Shoes
+          a(href='#') View Gallery
+      li
+        .image(style='background-image:url(https://images.unsplash.com/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
+        .content
+          h2 Winter Collection 2017
+          a(href='#') View Gallery
+      li
+        .image(style='background-image:url(https://images.unsplash.com/photo-1453974336165-b5c58464f1ed?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);')
+        .content
+          h2 Summer Collection
+          a(href='#') View Gallery
+  .text
+    p
+      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero qui error, nesciunt quam laborum nihil cupiditate delectus pariatur facilis odio suscipit provident blanditiis, quod. Blanditiis dolorem quo illum voluptatem maiores.
+
+
+block scripts
+  script(src='/js/views/dashboard.js')
+  link(rel='stylesheet', href='/css/dashboard.css')   
