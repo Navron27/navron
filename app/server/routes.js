@@ -78,6 +78,18 @@ module.exports = function(app) {
 			});
 		}
 	});
+
+	app.get('/alumnilist', function(req, res) {
+		if (req.session.user == null){
+			res.redirect('/');
+		}	else{
+			res.render('alumniList', {
+				title : 'Alumni List',
+				countries : CT,
+				udata : req.session.user
+			});
+		}
+	});
 	
 	app.post('/home', function(req, res){
 		if (req.session.user == null){
